@@ -6,7 +6,7 @@ for file_path in /data/in/files/*.mpileup.samtools; do
     # Let's extract the filename from the path
     filename=$(basename ${file_path})
 
-    # Let's remove the SAM extension
+    # Let's remove the file extension
     filename=${filename:0:-17}
 
     # Execute the samtools on input file and save the output as .vcf file
